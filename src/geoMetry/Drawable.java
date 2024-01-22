@@ -2,8 +2,8 @@ package geoMetry;
 
 public abstract class Drawable {
 
-	private double x;
-	private double y;
+	double x;
+	double y;
 	
 	
 	public double getX() {
