@@ -22,7 +22,7 @@ public class Group {
     }
     
     /**
-     * calculates the area of all the shapes on the field together
+     * calculates the total area of all the shapes on the field 
      * @return
      */
     double calculateTotalArea() {
@@ -34,7 +34,7 @@ public class Group {
     }
     
     /**
-     * calculates Total Circumference of all the shapes on the field
+     * calculates total Circumference of all the shapes on the field
      * @return
      */
     double calculateTotalCircumference() {
