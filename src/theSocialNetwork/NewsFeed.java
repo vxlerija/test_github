@@ -28,4 +28,14 @@ public class NewsFeed {
 			System.out.println(n);
 		}
 	}
+
+    public Messages searchUserEntry(String username) {
+        for (Messages entry : this.entrys) {
+            if (entry.getAuthor().equals(username)) {
+                return entry;
+            }
+        }
+        return null; // User not found
+    }
+	
 }
