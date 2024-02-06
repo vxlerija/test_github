@@ -35,7 +35,24 @@ public class NewsFeed {
                 return entry;
             }
         }
-        return null; // User not found
+        return null;
+    }
+
+    public Messages findPost(String postType, String searchData) {
+        for (Messages entry : this.entrys) {
+            if (entry instanceof PhotoPost && postType.equals("PhotoPost")) {
+                PhotoPost photoPost = (PhotoPost) entry;
+                if (photoPost.getDataname().equalsIgnoreCase(searchData)) {
+                    return photoPost;
+                }
+            } else if (entry instanceof MessagePosts && postType.equals("MessagePost")) {
+                MessagePosts messagePost = (MessagePosts) entry;
+                if (messagePost.getText().equalsIgnoreCase(searchData)) {
+                    return messagePost;
+                }
+            }
+        }
+        return null; // Return null if no matching post is found
     }
 	
 }
