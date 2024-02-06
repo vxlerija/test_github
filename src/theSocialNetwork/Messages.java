@@ -42,6 +42,16 @@ public abstract class Messages {
 		return "author: " + this.author + "\t" + "timestamp: " + this.timestamp + "\t" + "likes: " + this.likes + "\n\t" + "comment: " + this.comment;
 	}
 	
+	public void addComment(Comment c) {
+		this.comment.add(c);
+	}
+	
+	public abstract void addLike();
+	
+	
+	public void Date() {
+		
+	}
 	
 	
 }
