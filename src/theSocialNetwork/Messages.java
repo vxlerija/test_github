@@ -37,5 +37,11 @@ public abstract class Messages {
 	}
 	
 	
-
+	@Override
+	public String toString() {
+		return "author: " + this.author + "\t" + "timestamp: " + this.timestamp + "\t" + "likes: " + this.likes + "\n\t" + "comment: " + this.comment;
+	}
+	
+	
+	
 }

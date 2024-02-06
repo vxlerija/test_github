@@ -20,5 +20,12 @@ public class Comment {
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "user: " + this.user + "\n\t" + "text: " + this.text;
+	}
+	
+	
+	
 
 }

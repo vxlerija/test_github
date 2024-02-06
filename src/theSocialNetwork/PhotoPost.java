@@ -1,6 +1,6 @@
 package theSocialNetwork;
 
-public class PhotoPost {
+public class PhotoPost extends Messages {
 
 	private String dataname;
 
@@ -12,6 +12,8 @@ public class PhotoPost {
 		this.dataname = dataname;
 	}
 	
-	
+	public String toString() {
+		return super.toString() + "\n\t" + "text: " + this.dataname;
+	}
 	
 }

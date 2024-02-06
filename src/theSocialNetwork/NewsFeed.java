@@ -23,4 +23,9 @@ public class NewsFeed {
 		this.entrys.remove(entry);
 	}
 
+	public void printFeed() {
+		for(Messages n : this.entrys) {
+			System.out.println(n);
+		}
+	}
 }
