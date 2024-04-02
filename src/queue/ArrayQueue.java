@@ -8,9 +8,9 @@ public class ArrayQueue {
 	private static int[] queue;
 	
 	public ArrayQueue(int size) {
-		this.front = 0;
-		this.rear = 0;
-		this.capacity = size;
+		front = 0;
+		rear = 0;
+		capacity = size;
 		queue = new int[size];
 	}
 	
