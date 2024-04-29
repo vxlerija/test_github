@@ -15,6 +15,12 @@ public class MessagePosts extends Messages {
 	public String toString() {
 		return super.toString() + "\n\t" + "text: " + this.text;
 	}
+
+	@Override
+	public void addLike() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }

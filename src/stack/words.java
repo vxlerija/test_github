@@ -5,15 +5,16 @@ import java.util.LinkedList;
 public class words {
 
 	public static String reverseString(String input) {
-		LinkedList<Character> list = new LinkedList<Character>();
+		LinkedList<Character> stack = new LinkedList<Character>();
 		char[] reversedList = new char[input.length()];
-		for(int i = 0; i < input.length(); i++) {
-			list.push(input.charAt(i));
-	 }
-		for(int i = 0; i < input.length(); i++) {
-			reversedList[i]=list.pop();
+		for(char c : input.toCharArray()) {
+			stack.push(c);
 		}
-		return String.valueOf(reversedList);
+		StringBuilder reversedString = new StringBuilder();
+		while(!stack.isEmpty()) {
+			reversedString.append(stack.pop());
+		}
+		return reversedString.toString();
 	}
 	
 	public static void main(String[] args) {
